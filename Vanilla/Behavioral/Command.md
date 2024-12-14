@@ -1,8 +1,12 @@
-Decoupling state from logic
+# Command Pattern
+
+- #Behavioral
+
+- Decoupling state from logic
 
 - Solves the problem of decoupling the sender and receiver of a request, allowing for more flexible and extensible code.
 
-### Example - No-SQL Migration Manger
+## Example - No-SQL Migration Manger
 
 ```javascript
 // Command Interface
@@ -136,7 +140,7 @@ async function runDatabaseMigrations() {
 }
 ```
 
-### Rating
+## Rating
 
 - #DogAssFart: Implementation of via classes in most scenarios is an overhead, you can use objects with callbacks for commands and [closure](./Closure.md) for state as:
 

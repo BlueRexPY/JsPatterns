@@ -1,8 +1,12 @@
-A function that uses props to build a new format of data
+# Factory Pattern
+
+- #Structural
+
+- A function that uses props to build a new format of data
 
 - Solves the problem of creating objects without specifying their exact classes, promoting loose coupling and flexibility. It centralizes object creation logic, simplifying code maintenance and enabling easier scalability.
 
-### Example 1 - Cache key creation
+## Example 1 - Cache key creation
 
 ```javascript
 const getCacheKey = ({ scope, action, key }) => `${scope}:${action}:${key}`;

@@ -1,8 +1,12 @@
-Wrapper over an object that intercepts access to the object and can modify the behavior
+# Proxy Pattern
+
+- #Structural
+
+- Wrapper over an object that intercepts access to the object and can modify the behavior
 
 - Solves the problem of controlling access and provide additional functionality to an object without changing its interface.
 
-### Example 1 - Form validator
+## Example 1 - Form validator
 
 ```javascript
 class FormValidator {
@@ -48,7 +52,7 @@ userForm.age = "25"; // -> 25 (number)
 userForm.age = "15"; // -> Error: Age must be between 18 and 120
 ```
 
-### Example 2 - Server/Client environment guard
+## Example 2 - Server/Client environment guard
 
 ```javascript
 const env = {

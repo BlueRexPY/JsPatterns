@@ -1,16 +1,21 @@
-JavaScript Patterns with real world examples and no bullshit.
+# JavaScript Patterns with real world examples and no bullshit
 
-### Table of Contents
-
-- [Introduction](Introduction.md)
+## Navigation
 
 - Vanilla:
-    - [Factory](Vanilla/Factory.md)
-    - [Proxy](Vanilla/Proxy.md)
-    - [Command](Vanilla/Command.md)
+  - Structural:
+    - [Proxy](Vanilla/Structural/Proxy.md)
+  - Creational:
+    - [Factory](Vanilla/Creational/Factory.md)
+  - Behavioral:
+    - [Command](Vanilla/Behavioral/Command.md)
 
-### Format
+## Format of the documents
 
-1. Definition
-2. Example
-3. Rating ( #MustHave | #Meh | #DogAssFart )
+1. Type - ( #Structural | #Behavioral | #Creational )
+2. What - Description
+3. Why - Use case / Problem
+4. Example - Code snippet
+5. Rating - ( #MustHave | #Meh | #DogAssFart )
+6. Comments - Additional notes
+7. Additional Resources - Links to other resources
