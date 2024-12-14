@@ -9,6 +9,7 @@
     - [Factory](Vanilla/Creational/Factory.md)
   - Behavioral:
     - [Command](Vanilla/Behavioral/Command.md)
+    - [Closure](Vanilla/Behavioral/Closure.md)
 
 ## Format of the documents
 
