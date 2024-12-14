@@ -167,3 +167,9 @@ async function runDatabaseMigrations() {
     rollback: () => void 0,
   };
   ```
+
+## Additional Resources
+
+- [Refactoring Guru](https://refactoring.guru/design-patterns/command)
+- [patterns.dev](https://www.patterns.dev/vanilla/command-pattern)
+- [oodesign](https://www.oodesign.com/command-pattern)

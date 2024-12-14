@@ -84,6 +84,12 @@ const dbHost = envProxy.dbHost; // -> "undefined"
 const publicAnalyticsKey = envProxy.publicAnalyticsKey; // -> "123456"
 ```
 
-### Rating
+## Rating
 
 - #Meh: Situational use case, due to the low prevalence of proxies, such behavior may not be obvious, the same logic can be implemented through methods as `validator.setField("key",value)`, it will be more readable and understandable for other developers and provide more flexibility.
+
+## Additional Resources
+
+- [Refactoring Guru](https://refactoring.guru/design-patterns/proxy)
+- [patterns.dev](https://www.patterns.dev/vanilla/proxy-pattern)
+- [oodesign](https://www.oodesign.com/proxy-pattern)

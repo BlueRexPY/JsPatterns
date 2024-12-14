@@ -61,6 +61,12 @@ const camelCasResponse = snakeCaseToCamelCase(pythonServerResponse);
 // },
 ```
 
-### Rating
+## Rating
 
 - #MustHave: can be used in many different scenarios, from data transformation to object creation.
+
+## Additional Resources
+
+- [Refactoring Guru](https://refactoring.guru/design-patterns/factory-method)
+- [patterns.dev](https://www.patterns.dev/vanilla/factory-pattern)
+- [oodesign](https://www.oodesign.com/factory-pattern)
