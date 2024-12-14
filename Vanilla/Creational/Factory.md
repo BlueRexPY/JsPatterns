@@ -2,7 +2,7 @@
 
 - #Structural
 
-- A function that uses props to build a new format of data
+- A function that uses props to build a new format of data.
 
 - Solves the problem of creating objects without specifying their exact classes, promoting loose coupling and flexibility. It centralizes object creation logic, simplifying code maintenance and enabling easier scalability.
 

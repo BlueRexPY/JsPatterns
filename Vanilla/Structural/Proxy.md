@@ -2,7 +2,7 @@
 
 - #Structural
 
-- Wrapper over an object that intercepts access to the object and can modify the behavior
+- Wrapper over an object that intercepts access to the object and can modify the behavior.
 
 - Solves the problem of controlling access and provide additional functionality to an object without changing its interface.
 

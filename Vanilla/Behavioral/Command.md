@@ -2,7 +2,7 @@
 
 - #Behavioral
 
-- Decoupling state from logic
+- Decoupling state from logic.
 
 - Solves the problem of decoupling the sender and receiver of a request, allowing for more flexible and extensible code.
 
@@ -142,7 +142,7 @@ async function runDatabaseMigrations() {
 
 ## Rating
 
-- #DogAssFart: Implementation of via classes in most scenarios is an overhead, you can use objects with callbacks for commands and [closure](./Closure.md) for state as:
+- #DogAssFart: Implementation via classes in most scenarios is an overhead, you can use objects with callbacks for commands and [closure](/Vanilla/Behavioral/Closure.md) for state as:
 
   ```javascript
   const migrationManager = () => {
