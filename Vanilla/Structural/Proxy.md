@@ -11,16 +11,7 @@
 ```javascript
 class FormValidator {
   constructor(initialData = {}, validationRules = {}) {
-    this.validationRules = {
-      age: {
-        validate: (value) => {
-          const parsedValue = Number(value);
-          return !isNaN(num) && num >= 18 && num <= 120;
-        },
-        transform: (value) => Number(value),
-        errorMessage: "Age must be between 18 and 120",
-      },
-    };
+    this.validationRules = validationRules;
 
     return new Proxy(initialData, {
       set: (target, property, value) => {
@@ -45,10 +36,18 @@ class FormValidator {
   }
 }
 
-const userForm = new FormValidator();
+const userForm = new FormValidator({
+  age: {
+    validate: (value) => {
+      const parsedValue = Number(value);
+      return !isNaN(num) && num >= 18 && num <= 120;
+    },
+    transform: (value) => Number(value),
+    errorMessage: "Age must be between 18 and 120",
+  },
+});
 
 userForm.age = "25"; // -> 25 (number)
-
 userForm.age = "15"; // -> Error: Age must be between 18 and 120
 ```
 
@@ -60,6 +59,7 @@ const env = {
   dbPort: 5432,
   dbUser: "root",
   dbPassword: "root",
+  // have `public` prefix to indicate that these keys are safe to expose
   publicAnalyticsKey: "123456",
   publicPaymentKey: "654321",
 };
@@ -76,17 +76,17 @@ const envProxy = new Proxy(env, {
 });
 
 // in server environment
-const dbHost = envProxy.dbHost; // -> "localhost"
-const publicAnalyticsKey = envProxy.publicAnalyticsKey; // -> "123456"
+envProxy.dbHost; // -> "localhost"
+envProxy.publicAnalyticsKey; // -> "123456"
 
 // in client environment
-const dbHost = envProxy.dbHost; // -> "undefined"
-const publicAnalyticsKey = envProxy.publicAnalyticsKey; // -> "123456"
+envProxy.dbHost; // -> "undefined" (not allowed)
+envProxy.publicAnalyticsKey; // -> "123456"
 ```
 
 ## Rating
 
-- #Meh: Situational use case, due to the low prevalence of proxies, such behavior may not be obvious, the same logic can be implemented through methods as `validator.setField("key",value)`, it will be more readable and understandable for other developers and provide more flexibility.
+- #Meh: Situational use case, due to the low prevalence of proxies, such behavior may not be obvious, the same logic can be implemented through methods as `userForm.setField("key",value)`, it will be more readable and understandable for other developers and provide more flexibility.
 
 ## Additional Resources
 
