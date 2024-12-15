@@ -49,7 +49,7 @@ const snakeCaseResponse = {
   },
 };
 
-const camelCasResponse = snakeCaseToCamelCase(pythonServerResponse);
+const camelCasResponse = snakeCaseToCamelCase(snakeCaseResponse);
 //->
 // {
 //   userId: 1,

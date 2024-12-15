@@ -9,15 +9,15 @@
 ## Example 1 - uniqueId generator
 
 ```javascript
-const uniqueId = (() => {
+const generateUniqueID = (() => {
   let id = 0;
 
   return () => id++;
 })();
 
-uniqueId(); // -> 0
-uniqueId(); // -> 1
-uniqueId(); // -> 2
+generateUniqueID(); // -> 0
+generateUniqueID(); // -> 1
+generateUniqueID(); // -> 2
 ```
 
 ## Example 2 - memoization
