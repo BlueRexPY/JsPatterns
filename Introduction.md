@@ -7,6 +7,7 @@
     - [Proxy](Vanilla/Structural/Proxy.md)
   - Creational:
     - [Factory](Vanilla/Creational/Factory.md)
+    - [Singleton](Vanilla/Creational/Singleton.md)
   - Behavioral:
     - [Command](Vanilla/Behavioral/Command.md)
     - [Closure](Vanilla/Behavioral/Closure.md)
